@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone code
-        run: action/checkout@v2
+        uses: action/checkout@v2
       - name: docker build
         run: docker build -t vikver74/lesson19:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
